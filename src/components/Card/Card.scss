@@ -1,0 +1,75 @@
+@import "../../theme.scss";
+.card {
+  width: 250px;
+  height: 380px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.75);
+
+  &__image {
+    height: 60%;
+    width: 100%;
+
+    overflow: hidden;
+
+    & .image {
+      width: 100%;
+      height: 100%;
+      background: $btn;
+    }
+  }
+
+  &__info {
+    display: grid;
+    padding: 15px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30%;
+      background: #fff;
+      border: none;
+      -webkit-box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 24px -11px rgba(0, 0, 0, 0.75);
+      color: #000;
+      padding: 10px 0px;
+      border-radius: 8.2px;
+      cursor: pointer;
+    }
+
+    & button:hover {
+      box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+      background: rgb(0, 0, 0);
+      color: #fff;
+      border: none;
+    }
+
+    & h1 {
+      font-size: 17px;
+      text-align: center;
+      font-weight: 500;
+      color: $btn;
+      height: 40%;
+    }
+
+    &--price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 30%;
+
+      & p {
+        font-weight: 500;
+        color: $btn;
+      }
+    }
+  }
+}

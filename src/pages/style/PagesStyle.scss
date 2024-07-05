@@ -1,0 +1,307 @@
+// signUp page start
+@import "../../theme.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.signUp {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__center {
+    width: 450px;
+    border-radius: 5px;
+    border: 1px solid $btn;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    &--logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      & h1 {
+        font-weight: 500;
+        font-family: "Volkhov";
+        color: $btn;
+        font-size: 45px;
+      }
+
+      & p {
+        font-weight: 500;
+        font-family: "Volkhov";
+        color: $btn;
+        font-size: 20px;
+      }
+    }
+
+    &--inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 25px;
+      width: 100%;
+
+      & button {
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 15px;
+        outline: none;
+        border: 1px solid $btn;
+        color: #fff;
+        box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+        background: rgb(0, 0, 0);
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      & .inputBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        & input {
+          width: 100%;
+          padding: 10px;
+          outline: none;
+          border-radius: 15px;
+          border: 1px solid $btn;
+          font-size: 16px;
+        }
+
+        & label {
+          color: $btn;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// end SignIn and Signup
+
+// start main
+
+.ultimate {
+  padding: 18px 0px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+  }
+
+  &__blocks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    &--block1 {
+      background: rgb(224, 224, 224);
+      width: 320px;
+      height: 620px;
+      border-radius: 8.2px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    &--block2 {
+      width: 350px;
+      height: 620px;
+      border-radius: 8.2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &-top {
+        background: rgb(224, 224, 224);
+        border-radius: 8.2px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+      }
+
+      &-foot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4.1px;
+        box-shadow: 0px 16.39px 42.85px 0px rgba(68, 68, 68, 0.04);
+        background: rgb(255, 255, 255);
+
+        & img {
+          width: 100%;
+        }
+      }
+
+      &-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        h1 {
+          font-size: 75px;
+          font-weight: 500;
+          color: $btn;
+        }
+        h2 {
+          color: #000;
+          font-size: 145px;
+          margin-top: -50px;
+        }
+        h3 {
+          font-size: 17px;
+          font-weight: 400;
+          color: $btn;
+          margin-top: -40px;
+        }
+        & .shop {
+          border-radius: 8.2px;
+          box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+          background: rgb(0, 0, 0);
+          color: #fff;
+          padding: 10px 25px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &--block3 {
+      background: rgb(224, 224, 224);
+      width: 320px;
+      height: 620px;
+      border-radius: 8.2px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+  }
+}
+
+// end
+
+// start
+
+.shop {
+  display: flex;
+  width: 100%;
+}
+
+// end
+
+// start
+
+.cartPage {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+
+  .total-summary {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .check-button {
+    border-radius: 8.2px;
+    box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    & h1 {
+      font-family: "Volkhov";
+      color: $btn;
+      font-size: 42px;
+      font-weight: 400;
+    }
+  }
+
+  &__itemList {
+    border: 1px solid;
+    height: 10px;
+    overflow: scroll;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+
+    & span {
+      font-family: "Volkhov";
+      font-size: 35px;
+      color: $btn;
+    }
+  }
+
+  &__info {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+
+    &,
+    p {
+      font-family: Volkhov;
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    & .a1 {
+      width: 50%;
+    }
+
+    & .a2 {
+      width: 20%;
+    }
+
+    & .a3 {
+      width: 20%;
+    }
+
+    & .a4 {
+      width: 10%;
+    }
+  }
+}

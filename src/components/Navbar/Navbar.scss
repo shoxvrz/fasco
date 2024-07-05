@@ -1,0 +1,39 @@
+@import "../../theme.scss";
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  padding: 0px 150px;
+
+  &__logo {
+    font-size: 30px;
+    & h1 {
+      font-weight: 500;
+      font-family: "Volkhov";
+      color: $btn;
+    }
+  }
+  &__navigation {
+    padding: 0px 10px;
+    display: flex;
+    list-style: none;
+    gap: 100px;
+    &-navs {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 50px;
+
+      & li {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: $btn;
+      }
+    }
+  }
+}
+.active {
+  border-bottom: 2px $btn solid;
+}

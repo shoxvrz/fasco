@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.signUp {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signUp__center {
+  width: 450px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 72, 72);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.signUp__center--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.signUp__center--logo h1 {
+  font-weight: 500;
+  font-family: "Volkhov";
+  color: rgb(72, 72, 72);
+  font-size: 45px;
+}
+.signUp__center--logo p {
+  font-weight: 500;
+  font-family: "Volkhov";
+  color: rgb(72, 72, 72);
+  font-size: 20px;
+}
+.signUp__center--inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+.signUp__center--inputs button {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid rgb(72, 72, 72);
+  color: #fff;
+  box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(0, 0, 0);
+  font-size: 18px;
+  cursor: pointer;
+}
+.signUp__center--inputs .inputBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.signUp__center--inputs .inputBox input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid rgb(72, 72, 72);
+  font-size: 16px;
+}
+.signUp__center--inputs .inputBox label {
+  color: rgb(72, 72, 72);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ultimate {
+  padding: 18px 0px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ultimate__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.ultimate__blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.ultimate__blocks--block1 {
+  background: rgb(224, 224, 224);
+  width: 320px;
+  height: 620px;
+  border-radius: 8.2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.ultimate__blocks--block2 {
+  width: 350px;
+  height: 620px;
+  border-radius: 8.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ultimate__blocks--block2-top {
+  background: rgb(224, 224, 224);
+  border-radius: 8.2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+.ultimate__blocks--block2-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4.1px;
+  box-shadow: 0px 16.39px 42.85px 0px rgba(68, 68, 68, 0.04);
+  background: rgb(255, 255, 255);
+}
+.ultimate__blocks--block2-foot img {
+  width: 100%;
+}
+.ultimate__blocks--block2-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.ultimate__blocks--block2-center h1 {
+  font-size: 75px;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+.ultimate__blocks--block2-center h2 {
+  color: #000;
+  font-size: 145px;
+  margin-top: -50px;
+}
+.ultimate__blocks--block2-center h3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+  margin-top: -40px;
+}
+.ultimate__blocks--block2-center .shop {
+  border-radius: 8.2px;
+  box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+.ultimate__blocks--block3 {
+  background: rgb(224, 224, 224);
+  width: 320px;
+  height: 620px;
+  border-radius: 8.2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.shop {
+  display: flex;
+  width: 100%;
+}
+
+.cartPage {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cartPage .total-summary {
+  font-size: 18px;
+  font-weight: 600;
+}
+.cartPage .check-button {
+  border-radius: 8.2px;
+  box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+.cartPage__title h1 {
+  font-family: "Volkhov";
+  color: rgb(72, 72, 72);
+  font-size: 42px;
+  font-weight: 400;
+}
+.cartPage__itemList {
+  border: 1px solid;
+  height: 10px;
+  overflow: scroll;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+.cartPage__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.cartPage__empty span {
+  font-family: "Volkhov";
+  font-size: 35px;
+  color: rgb(72, 72, 72);
+}
+.cartPage__info {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+.cartPage__info,
+.cartPage__info p {
+  font-family: Volkhov;
+  font-size: 22px;
+  font-weight: 400;
+}
+.cartPage__info .a1 {
+  width: 50%;
+}
+.cartPage__info .a2 {
+  width: 20%;
+}
+.cartPage__info .a3 {
+  width: 20%;
+}
+.cartPage__info .a4 {
+  width: 10%;
+}/*# sourceMappingURL=PagesStyle.css.map */

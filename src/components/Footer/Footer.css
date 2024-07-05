@@ -1,0 +1,42 @@
+.footer {
+  border-top: 0.82px solid rgb(222, 223, 225);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 0px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 150px;
+}
+.footer__up {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__up-logo {
+  font-size: 18px;
+}
+.footer__up-logo h1 {
+  font-weight: 500;
+  font-family: "Volkhov";
+  color: rgb(72, 72, 72);
+}
+.footer__up-navigations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: rgb(72, 72, 72);
+}
+.footer__up-navigations li {
+  font-size: 15px;
+  cursor: pointer;
+}
+.footer__down {
+  font-family: Poppins;
+  font-size: 9.83px;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}/*# sourceMappingURL=Footer.css.map */

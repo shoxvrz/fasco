@@ -1,0 +1,77 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 2px solid rgb(72, 72, 72);
+}
+.filter .submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 8.2px;
+  cursor: pointer;
+  padding: 10px;
+  padding: 8px 20px;
+}
+.filter h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+.filter__price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.filter__price--valuePrice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filter__price--valuePrice span {
+  font-size: 16px;
+  color: rgb(72, 72, 72);
+  font-weight: 500;
+}
+.filter__price--valuePrice .minPrice {
+  display: flex;
+  gap: 10px;
+}
+.filter__price--valuePrice .maxPrice {
+  display: flex;
+  gap: 10px;
+}
+.filter__price p {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+.filter__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.filter__categories button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  background: #fff;
+  border: 1px solid rgb(72, 72, 72);
+  color: #000;
+  padding: 10px 0px;
+  border-radius: 8.2px;
+  cursor: pointer;
+  padding: 10px;
+}
+.filter__categories .activeBtn {
+  box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+}/*# sourceMappingURL=Filter.css.map */

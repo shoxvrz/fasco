@@ -1,0 +1,16 @@
+.mainItems {
+  width: 80%;
+  padding: 5px;
+}
+.mainItems h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+.mainItems__products {
+  border-top: 2px solid rgb(72, 72, 72);
+  padding: 20px;
+  justify-items: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}/*# sourceMappingURL=MainItems.css.map */

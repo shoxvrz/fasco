@@ -1,0 +1,88 @@
+@import "../../theme.scss";
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 2px solid $btn;
+
+
+  .submitBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 8.2px;
+    cursor: pointer;
+    padding: 10px;
+    padding: 8px 20px;
+  }
+
+  & h1 {
+    font-size: 25px;
+    font-weight: 500;
+    color: $btn;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &--valuePrice {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span{
+        font-size: 16px;
+        color: $btn;
+        font-weight: 500;
+      }
+
+      .minPrice {
+        display: flex;
+        gap: 10px;
+      }
+      .maxPrice {
+        display: flex;
+        gap: 10px;
+      }
+    }
+
+    & p {
+      font-size: 20px;
+      font-weight: 500;
+      color: $btn;
+    }
+  }
+
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    & button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30%;
+      background: #fff;
+      border: 1px solid $btn;
+      color: #000;
+      padding: 10px 0px;
+      border-radius: 8.2px;
+      cursor: pointer;
+      padding: 10px;
+    }
+    & .activeBtn {
+      box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+      background: rgb(0, 0, 0);
+      color: #fff;
+      border: none;
+    }
+  }
+}
