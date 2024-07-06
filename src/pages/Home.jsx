@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style/PagesStyle.scss";
 import img1 from "../assets/image 2 28.svg";
 import img2 from "../assets/image 227.svg";
@@ -11,11 +11,13 @@ import logo4 from "../assets/logo (3).svg";
 import logo5 from "../assets/logo (4).svg";
 import { Link } from "react-router-dom";
 import useGetData from "../hooks/useGetData";
+import NewArrival from "../components/NewArrival/NewArrival";
 
 const Home = () => {
   const { itemData } = useGetData();
 
   return (
+  
     <div className="ultimate">
       <div className="ultimate__blocks">
         <div className="ultimate__blocks--block1">
@@ -48,8 +50,12 @@ const Home = () => {
         <img src={logo4} alt="" />
         <img src={logo5} alt="" />
       </div>
+      <div>
+        <NewArrival/>
+      </div>
     </div>
   );
 };
 
 export default Home;
+

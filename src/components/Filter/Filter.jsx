@@ -1,3 +1,5 @@
+// components/Filter/Filter.js
+
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
@@ -7,14 +9,16 @@ import {
   selectMinPrice,
   selectMaxPrice,
   setPriceRange,
+  selectCategoryFilter,
+  setCategoryFilter,
 } from "../../toolkit/slice/filterSlice";
 
 const Filter = () => {
   const dispatch = useDispatch();
   const minPrice = useSelector(selectMinPrice);
   const maxPrice = useSelector(selectMaxPrice);
+  const categoryFilter = useSelector(selectCategoryFilter);
   const [value, setValue] = useState([minPrice, maxPrice]);
-  const [clickedBtn, setClickedBtn] = useState('all')
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -24,48 +28,54 @@ const Filter = () => {
     dispatch(setPriceRange({ minPrice: value[0], maxPrice: value[1] }));
   };
 
+  const handleCategoryFilter = (category) => {
+    dispatch(setCategoryFilter(category));
+  };
+
   return (
     <div className="filter" style={{ width: "20%" }}>
       <h1>Filter By Categories</h1>
       <div className="filter__categories">
-      <div className="filter__categories">
-                  <button
-                    onClick={() => setClickedBtn("all")}
-                    className={clickedBtn === "all" ? "activeBtn" : ""}
-                  >
-                    All
-                  </button>
-                  <button
-                    onClick={() => setClickedBtn("clothes")}
-                    className={clickedBtn === "clothes" ? "activeBtn" : ""}
-                  >
-                    Clothes
-                  </button>
-                  <button
-                    onClick={() => setClickedBtn("electronics")}
-                    className={clickedBtn === "electronics" ? "activeBtn" : ""}
-                  >
-                    Electronics
-                  </button>
-                  <button
-                    onClick={() => setClickedBtn("furniture")}
-                    className={clickedBtn === "furniture" ? "activeBtn" : ""}
-                  >
-                    Furniture
-                  </button>
-                  <button
-                    onClick={() => setClickedBtn("shoes")}
-                    className={clickedBtn === "shoes" ? "activeBtn" : ""}
-                  >
-                    Shoes
-                  </button>
-                  <button
-                    onClick={() => setClickedBtn("miscellaneous")}
-                    className={clickedBtn === "miscellaneous" ? "activeBtn" : ""}
-                  >
-                    Miscellaneous
-                  </button>
-                </div>
+        <button
+          onClick={() => handleCategoryFilter("all")}
+          className={categoryFilter === "all" ? "activeBtn" : ""}
+          value={'all'}
+        >
+          All
+        </button>
+        <button
+          onClick={() => handleCategoryFilter("clothes")}
+          className={categoryFilter === "clothes" ? "activeBtn" : ""}
+          value={'all'}
+        >
+          Clothes
+        </button>
+        <button
+          onClick={() => handleCategoryFilter("electronics")}
+          className={categoryFilter === "electronics" ? "activeBtn" : ""}
+          value={'all'}
+        >
+          Electronics
+        </button>
+        <button
+          onClick={() => handleCategoryFilter("furniture")}
+          className={categoryFilter === "furniture" ? "activeBtn" : ""}
+          value={'all'}
+        >
+          Furniture
+        </button>
+        <button
+          onClick={() => handleCategoryFilter("shoes")}
+          className={categoryFilter === "shoes" ? "activeBtn" : ""}
+        >
+          Shoes
+        </button>
+        <button
+          onClick={() => handleCategoryFilter("miscellaneous")}
+          className={categoryFilter === "miscellaneous" ? "activeBtn" : ""}
+        >
+          Miscellaneous
+        </button>
       </div>
       <div className="filter__price">
         <p>Price Range</p>
@@ -73,10 +83,10 @@ const Filter = () => {
           <div className="minPrice">
             <span>Min-price:</span>
             <span>{minPrice}</span>
-            <div className="maxPrice">
-              <span>Max-price:</span>
-              <span>{maxPrice}</span>
-            </div>
+          </div>
+          <div className="maxPrice">
+            <span>Max-price:</span>
+            <span>{maxPrice}</span>
           </div>
         </div>
         <Box sx={{ width: 200 }}>
@@ -90,7 +100,9 @@ const Filter = () => {
           />
         </Box>
         <div>
-          <button className="submitBtn" onClick={handleApplyFilter}>Submit</button>
+          <button className="submitBtn" onClick={handleApplyFilter}>
+            Apply Filters
+          </button>
         </div>
       </div>
     </div>
@@ -98,6 +110,3 @@ const Filter = () => {
 };
 
 export default Filter;
-
-
-               

@@ -1,6 +1,5 @@
-// hooks/useGetData.js
-import { useEffect, useState } from 'react';
-import axios from 'axios'; // Example - adjust based on your data fetching method
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const useGetData = () => {
   const [itemData, setItemData] = useState([]);
@@ -10,8 +9,8 @@ const useGetData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/data'); // Replace with your API endpoint
-        setItemData(response.data); // Assuming your API response contains item data
+        const response = await axios.get("http://localhost:3000/data");
+        setItemData(response.data);
         setLoading(false);
       } catch (error) {
         setError(error);
@@ -26,6 +25,3 @@ const useGetData = () => {
 };
 
 export default useGetData;
-
-
-// http://localhost:3000/data'
