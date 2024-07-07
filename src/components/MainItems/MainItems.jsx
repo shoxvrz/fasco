@@ -5,17 +5,15 @@ import useGetData from '../../hooks/useGetData';
 import Card from '../Card/Card';
 import { useSelector , useDispatch} from 'react-redux';
 import { addToCart } from '../../toolkit/slice/cartSlice';
+import useAddToCart from '../../hooks/useAddToCart';
 
 const MainItems = () => {
   const { itemData, loading, error } = useGetData();
   const cartItems = useSelector((state) => state.cart.cartItems);
   const minPrice = useSelector((state) => state.filterProducts.minPrice);
   const maxPrice = useSelector((state) => state.filterProducts.maxPrice);
-  const dispatch = useDispatch()
 
-  const addToCartHandler = (pro) => {
-    dispatch(addToCart(pro))
-  }
+  const {addToCartHandler} = useAddToCart()
 
   const filteredItems = itemData.filter(pro => pro.price >= minPrice && pro.price <= maxPrice);
 

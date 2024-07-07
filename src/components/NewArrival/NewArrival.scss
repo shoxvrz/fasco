@@ -1,56 +1,31 @@
+@import "../../theme.scss";
 .newArrivals {
-  border: 1px solid;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & h1{
+      font-family: 'Volkhov';
+      font-size: 40px;
+      color: #000;
+    }
+  }
 
   &__newCards {
     display: flex;
     align-items: center;
-    justify-content: center;
-    .swiper-slide {
-      .card {
-        width: 100px;
-        height: 100px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        .card__image {
-          img {
-            width: 100%;
-            height: auto;
-            display: block;
-          }
-        }
-        .card__info {
-          padding: 10px;
-          h1 {
-            font-size: 18px;
-            margin-bottom: 10px;
-          }
-          .card__info--price {
-            display: flex;
-            justify-content: space-between;
-            p {
-              font-size: 14px;
-              color: #888;
-            }
-          }
-          .card__info--button {
-            margin-top: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            &:hover {
-              background-color: #0056b3;
-            }
-          }
-        }
-      }
+
+    &--cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }

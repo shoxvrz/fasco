@@ -16,7 +16,7 @@
   background: rgb(72, 72, 72);
 }
 .card__info {
-  display: grid;
+  display: flex;
   padding: 15px;
   height: 40%;
   display: flex;

@@ -8,10 +8,13 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "./NewArrival.scss";
 import Container from "../../layout/Container";
+import useAddToCart from "../../hooks/useAddToCart";
 
 const NewArrival = () => {
   const [newArrival, setNewArrival] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const {addToCartHandler} = useAddToCart()
 
   useEffect(() => {
     fetchData();
@@ -32,7 +35,7 @@ const NewArrival = () => {
     <Container>
       <div className="newArrivals">
         <div className="newArrivals__title">
-            <h1>New Arrivals</h1>
+          <h1>New Arrivals</h1>
         </div>
         <div className="newArrivals__newCards">
           {loading ? (
@@ -41,9 +44,8 @@ const NewArrival = () => {
             <Swiper
               className="newArrivals__newCards--cards"
               modules={[Navigation, Pagination, Scrollbar, A11y]}
-              spaceBetween={30}
-              slidesPerView={3}
-              navigation
+              spaceBetween={40}
+              slidesPerView={5}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
             >
@@ -60,8 +62,8 @@ const NewArrival = () => {
                         <p>Price</p>
                         <p>${newItem.price}</p>
                       </div>
+                      <button onClick={() => addToCartHandler(newItem)}>Add To Cart</button>
                     </div>
-                    <button>Add To Cart</button>
                   </SwiperSlide>
                 ))}
             </Swiper>

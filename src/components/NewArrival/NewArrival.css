@@ -1,51 +1,26 @@
 .newArrivals {
-  border: 1px solid;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
-.newArrivals__newCards {
+.newArrivals__title {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.newArrivals__newCards .swiper-slide .card {
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+.newArrivals__title h1 {
+  font-family: "Volkhov";
+  font-size: 40px;
+  color: #000;
 }
-.newArrivals__newCards .swiper-slide .card .card__image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.newArrivals__newCards .swiper-slide .card .card__info {
-  padding: 10px;
-}
-.newArrivals__newCards .swiper-slide .card .card__info h1 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-.newArrivals__newCards .swiper-slide .card .card__info .card__info--price {
+.newArrivals__newCards {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
-.newArrivals__newCards .swiper-slide .card .card__info .card__info--price p {
-  font-size: 14px;
-  color: #888;
-}
-.newArrivals__newCards .swiper-slide .card .card__info .card__info--button {
-  margin-top: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.newArrivals__newCards .swiper-slide .card .card__info .card__info--button:hover {
-  background-color: #0056b3;
+.newArrivals__newCards--cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=NewArrival.css.map */
