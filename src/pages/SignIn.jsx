@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./style/PagesStyle.scss";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { signUpStart, signUpSuccess, signUpFailure, signIn } from '../toolkit/slice/userSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { signInSuccess, signInFailure, signInStart } from '../toolkit/slice/userSlice';
 
 const SignIn = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const { error } = useSelector((state) => state.user); // Ensure this selector is specific to signIn
 
   const [signInData, setSignInData] = useState({
     email: "",
@@ -26,21 +27,21 @@ const SignIn = () => {
   const submitHandler = async () => {
     if (signInData.email && signInData.password) {
       try {
-        dispatch(signUpStart());
+        dispatch(signInStart());
         const { data } = await axios.get("http://localhost:3000/userData");
         const user = data.find(u => u.email === signInData.email);
         if (user) {
           if (user.password === signInData.password) {
-            dispatch(signIn(user)); 
-            navigate('/'); 
+            dispatch(signInSuccess(user)); 
+            navigate('/'); // Navigate to the home page on successful sign-in
           } else {
-            dispatch(signUpFailure("Incorrect password"));
+            dispatch(signInFailure("Incorrect password"));
           }
         } else {
-          dispatch(signUpFailure("User not found"));
+          dispatch(signInFailure("User not found"));
         }
       } catch (error) {
-        dispatch(signUpFailure(error.message));
+        dispatch(signInFailure(error.message));
       }
     } else {
       alert('Please enter email and password');
@@ -48,13 +49,13 @@ const SignIn = () => {
   };
 
   return (
-    <div className="signUp">
-      <div className="signUp__center">
-        <div className="signUp__center--logo">
+    <div className="signIn">
+      <div className="signIn__center">
+        <div className="signIn__center--logo">
           <h1>Fasco</h1>
           <p>Sign In</p>
         </div>
-        <div className="signUp__center--inputs">
+        <div className="signIn__center--inputs">
           <div className="inputBox">
             <label htmlFor="email">Email</label>
             <input
@@ -74,6 +75,7 @@ const SignIn = () => {
             />
           </div>
           <button onClick={submitHandler}>Confirm</button>
+          {error && <p className="error-message">{error}</p>} {/* Display error message specific to sign-in */}
         </div>
       </div>
     </div>

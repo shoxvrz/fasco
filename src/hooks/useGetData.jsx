@@ -3,6 +3,7 @@ import axios from "axios";
 
 const useGetData = () => {
   const [itemData, setItemData] = useState([]);
+  const [userData, setUserData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -21,7 +22,29 @@ const useGetData = () => {
     fetchData();
   }, []);
 
-  return { itemData, loading, error };
+  useEffect(() => {
+    const fetchUserData = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/userData');
+        setUserData(response.data);
+      } catch (error) {
+        setError(error);
+      }
+    };
+
+    fetchUserData();
+  }, []);
+
+  const deleteItem = async (id) => {
+    try {
+      await axios.delete(`http://localhost:3000/userData/${id}`);
+      setUserData((prevUsers) => prevUsers.filter(user => user.id !== id));
+    } catch (error) {
+      setError(error);
+    }
+  };
+
+  return { itemData, userData, loading, error, deleteItem };
 };
 
 export default useGetData;

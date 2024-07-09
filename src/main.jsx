@@ -11,6 +11,9 @@ import SignUp from "./pages/SignUp.jsx";
 import store from "./toolkit/store.js";
 import {Provider} from 'react-redux'
 import ProductPage from "./pages/ProductPage.jsx";
+import AdminPage from "./pages/AdminPages/AdminPage.jsx";
+import UsersDataPage from "./pages/AdminPages/UsersDataPage.jsx";
+import ProductsDataPage from "./pages/AdminPages/ProductsDataPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +46,20 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: '/adminPage',
+    element: <AdminPage/>,
+    children: [
+      {
+        path: '/adminPage',
+        element: <UsersDataPage/>
+      },
+      {
+        path: '/adminPage/productsDataPage',
+        element: <ProductsDataPage/>
+      }
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

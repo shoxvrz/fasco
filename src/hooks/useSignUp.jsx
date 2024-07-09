@@ -61,6 +61,16 @@ const useSignUp = () => {
             return;
         }
 
+        const {data} = await axios.get('http://localhost:3000/userData')
+        const user = data.find(u => u.email !== inputData.email)
+
+        if(user){
+            setSnackbarSeverity('error');
+            setSnackbarMessage('Email already exist!');
+            setOpenSnackbar(true);
+            return;
+        }
+
         try {
             dispatch(signUpStart());
 

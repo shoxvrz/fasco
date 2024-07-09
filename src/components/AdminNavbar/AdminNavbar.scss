@@ -1,0 +1,33 @@
+.navbar{
+    display: flex;
+    border-bottom: 1px solid;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+
+    & h1{
+        font-size: 25px;
+    }
+
+    &__links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        & div{
+            list-style-type: none;
+            font-weight: 500;
+            font-size: 18px;
+            gap: 10px;
+            display: flex;
+
+            & li{
+                cursor: pointer;
+            }
+        }
+    }
+}
+.active{
+    border-bottom: 1px solid;
+}

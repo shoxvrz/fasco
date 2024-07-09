@@ -1,67 +1,25 @@
 {
   "userData": [
     {
-      "name": "shoxruz",
-      "email": "sh@gmail.com",
-      "password": "1234sh",
-      "rePassword": "1234sh",
-      "id": "fbc3"
-    },
-    {
-      "id": "f5de",
-      "name": "as",
-      "email": "s",
-      "password": "12",
-      "rePassword": "as"
-    },
-    {
-      "id": "33e3",
-      "name": "a",
-      "email": "s",
-      "password": "d",
-      "rePassword": "f"
-    },
-    {
-      "id": "e294",
-      "name": "Shoxruz",
-      "email": "sh@gmail.com",
-      "password": "2007iyun07",
-      "rePassword": "2007iyun07"
-    },
-    {
-      "id": "d4c0",
-      "name": "a",
-      "email": "a",
-      "password": "a",
-      "rePassword": "a"
-    },
-    {
-      "id": "2dc3",
-      "name": "as",
-      "email": "as",
-      "password": "as",
-      "rePassword": "as"
-    },
-    {
-      "id": "9d35",
-      "name": "Shoxruz",
-      "email": "sh@gmail.com",
-      "password": "sh@Gmail",
-      "rePassword": "sh@Gmail"
-    },
-    {
-      "id": "7253",
-      "name": "Shoxruz",
-      "email": "sh@gmail.com",
-      "password": "Shoxruz7@",
-      "rePassword": "Shoxruz7@"
-    },
-    {
       "id": "8a53",
       "name": "Shuxruz",
       "email": "sh@gmail.com",
       "password": "Shoxruz7@",
       "rePassword": "Shoxruz7@"
+    },
+    {
+      "id": "6eba",
+      "name": "Shoxruz",
+      "email": "sh@gmail.com",
+      "password": "77Kozim@",
+      "rePassword": "77Kozim@"
+    },
+    {
+      "id": "9be4",
+      "name": "Shuxruz",
+      "email": "sh@gmail.com",
+      "password": "77Kozim@",
+      "rePassword": "77Kozim@"
     }
   ],
   "data": [
