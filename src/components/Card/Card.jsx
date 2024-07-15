@@ -15,7 +15,7 @@ const Card = ({ title, price, images, pro, addToCartHandler }) => {
         <img
           onClick={() => handleRouter(pro.id)}
           className="image"
-          src={images[0]}
+          src={images}
           alt={title}
         />
       </div>

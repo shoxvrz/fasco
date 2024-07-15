@@ -8,7 +8,7 @@ import { signInSuccess, signInFailure, signInStart } from '../toolkit/slice/user
 const SignIn = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { error } = useSelector((state) => state.user); // Ensure this selector is specific to signIn
+  const { error } = useSelector((state) => state.user); 
 
   const [signInData, setSignInData] = useState({
     email: "",
@@ -75,7 +75,7 @@ const SignIn = () => {
             />
           </div>
           <button onClick={submitHandler}>Confirm</button>
-          {error && <p className="error-message">{error}</p>} {/* Display error message specific to sign-in */}
+          {error && <p className="error-message">{error}</p>} 
         </div>
       </div>
     </div>

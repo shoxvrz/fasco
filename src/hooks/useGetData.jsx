@@ -44,7 +44,7 @@ const useGetData = () => {
     }
   };
 
-  return { itemData, userData, loading, error, deleteItem };
+  return { itemData, userData, loading, error, deleteItem, setItemData };
 };
 
 export default useGetData;

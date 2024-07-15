@@ -1,89 +1,53 @@
 {
   "userData": [
     {
-      "id": "8a53",
-      "name": "Shuxruz",
-      "email": "sh@gmail.com",
+      "id": "fb65",
+      "name": "Shoxruz",
+      "email": "qweqw@gmail.com",
       "password": "Shoxruz7@",
       "rePassword": "Shoxruz7@"
     },
     {
-      "id": "6eba",
-      "name": "Shoxruz",
-      "email": "sh@gmail.com",
-      "password": "77Kozim@",
-      "rePassword": "77Kozim@"
+      "id": "bdc9",
+      "name": "Shuxruz",
+      "email": "qweqw@gmail.com",
+      "password": " Shoxruz7@",
+      "rePassword": " Shoxruz7@"
     },
     {
-      "id": "9be4",
+      "id": "446d",
       "name": "Shuxruz",
       "email": "sh@gmail.com",
-      "password": "77Kozim@",
-      "rePassword": "77Kozim@"
+      "password": " Shoxruz7@",
+      "rePassword": " Shoxruz7@"
+    },
+    {
+      "id": "18fe",
+      "name": "Shuxruz",
+      "email": "sh@gmail.com",
+      "password": " Shoxruz7@",
+      "rePassword": " Shoxruz7@"
     }
   ],
   "data": [
     {
-      "id": "977",
-      "title": "Majestic Mountain Graphic T-Shirt",
-      "price": 44,
-      "description": "Elevate your wardrobe with this stylish black t-shirt featuring a striking monochrome mountain range graphic. Perfect for those who love the outdoors or want to add a touch of nature-inspired design to their look, this tee is crafted from soft, breathable fabric ensuring all-day comfort. Ideal for casual outings or as a unique gift, this t-shirt is a versatile addition to any collection.",
-      "images": [
-        "https://i.imgur.com/UlxxXyG.jpeg",
-        "https://i.imgur.com/jb5Yu0h.jpeg",
-        "https://i.imgur.com/UlxxXyG.jpeg"
-      ],
-      "creationAt": "2024-06-30T09:21:35.000Z",
-      "updatedAt": "2024-06-30T09:21:35.000Z",
-      "category": {
-        "id": 104,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-06-30T09:21:35.000Z",
-        "updatedAt": "2024-06-30T09:21:35.000Z"
-      },
-      "newArrival": true
-    },
-    {
-      "id": "978",
       "title": "Classic High-Waisted Athletic Shorts",
       "price": 43,
-      "description": "Stay comfortable and stylish with our Classic High-Waisted Athletic Shorts. Designed for optimal movement and versatility, these shorts are a must-have for your workout wardrobe. Featuring a figure-flattering high waist, breathable fabric, and a secure fit that ensures they stay in place during any activity, these shorts are perfect for the gym, running, or even just casual wear.",
-      "images": [
-        "https://i.imgur.com/eGOUveI.jpeg",
-        "https://i.imgur.com/UcsGO7E.jpeg",
-        "https://i.imgur.com/NLn4e7S.jpeg"
-      ],
-      "creationAt": "2024-06-30T09:21:35.000Z",
-      "updatedAt": "2024-06-30T09:21:35.000Z",
       "category": {
-        "id": 104,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-06-30T09:21:35.000Z",
-        "updatedAt": "2024-06-30T09:21:35.000Z"
-      }
+        "name": "Furniture"
+      },
+      "extraInput": "",
+      "id": "978"
     },
     {
-      "id": "979",
-      "title": "Classic Red Pullover Hoodie",
-      "price": 10,
-      "description": "Elevate your casual wardrobe with our Classic Red Pullover Hoodie. Crafted with a soft cotton blend for ultimate comfort, this vibrant red hoodie features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs for a snug fit. The timeless design ensures easy pairing with jeans or joggers for a relaxed yet stylish look, making it a versatile addition to your everyday attire.",
-      "images": [
-        "https://i.imgur.com/1twoaDy.jpeg",
-        "https://i.imgur.com/FDwQgLy.jpeg",
-        "https://i.imgur.com/kg1ZhhH.jpeg"
-      ],
-      "creationAt": "2024-06-30T09:21:35.000Z",
-      "updatedAt": "2024-06-30T09:21:35.000Z",
+      "title": "Classic Hoodie",
+      "price": "90",
       "category": {
-        "id": 104,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-06-30T09:21:35.000Z",
-        "updatedAt": "2024-06-30T09:21:35.000Z"
+        "name": "Clothes"
       },
-      "newArrival": true
+      "newArrival": false,
+      "extraInput": "",
+      "id": "979"
     },
     {
       "id": "980",
@@ -107,25 +71,14 @@
       "newArrival": true
     },
     {
-      "id": "981",
-      "title": "Classic Red Jogger Sweatpants",
-      "price": 98,
-      "description": "Experience ultimate comfort with our red jogger sweatpants, perfect for both workout sessions and lounging around the house. Made with soft, durable fabric, these joggers feature a snug waistband, adjustable drawstring, and practical side pockets for functionality. Their tapered design and elastic cuffs offer a modern fit that keeps you looking stylish on the go.",
-      "images": [
-        "https://i.imgur.com/9LFjwpI.jpeg",
-        "https://i.imgur.com/vzrTgUR.jpeg",
-        "https://i.imgur.com/p5NdI6n.jpeg"
-      ],
-      "creationAt": "2024-06-30T09:21:35.000Z",
-      "updatedAt": "2024-06-30T09:21:35.000Z",
+      "title": "Classical Loafer",
+      "price": "108",
       "category": {
-        "id": 104,
-        "name": "Clothes",
-        "image": "https://i.imgur.com/QkIa5tT.jpeg",
-        "creationAt": "2024-06-30T09:21:35.000Z",
-        "updatedAt": "2024-06-30T09:21:35.000Z"
+        "name": "Shoes"
       },
-      "newArrival": true
+      "newArrival": true,
+      "extraInput": "",
+      "id": "981"
     },
     {
       "id": "982",
@@ -461,26 +414,6 @@
         "id": 103,
         "name": "Furniture",
         "image": "https://i.imgur.com/Qphac99.jpeg",
-        "creationAt": "2024-06-30T09:21:35.000Z",
-        "updatedAt": "2024-06-30T09:21:35.000Z"
-      }
-    },
-    {
-      "id": "999",
-      "title": "Sleek Smartwatch with Vibrant Display",
-      "price": 16,
-      "description": "Experience modern timekeeping with our high-tech smartwatch, featuring a vivid touch screen display, customizable watch faces, and a comfortable blue silicone strap. This smartwatch keeps you connected with notifications and fitness tracking while showcasing exceptional style and versatility.",
-      "images": [
-        "https://i.imgur.com/LGk9Jn2.jpeg",
-        "https://i.imgur.com/1ttYWaI.jpeg",
-        "https://i.imgur.com/sPRWnJH.jpeg"
-      ],
-      "creationAt": "2024-06-30T09:21:35.000Z",
-      "updatedAt": "2024-06-30T09:21:35.000Z",
-      "category": {
-        "id": 101,
-        "name": "Electronics",
-        "image": "https://i.imgur.com/ZANVnHE.jpeg",
         "creationAt": "2024-06-30T09:21:35.000Z",
         "updatedAt": "2024-06-30T09:21:35.000Z"
       }
@@ -1033,6 +966,26 @@
         "creationAt": "2024-06-30T09:21:35.000Z",
         "updatedAt": "2024-06-30T09:21:35.000Z"
       }
+    },
+    {
+      "title": "The Legendary Egg",
+      "price": "1000",
+      "category": {
+        "name": "Shoes"
+      },
+      "newArrival": true,
+      "extraInput": "",
+      "id": "999"
+    },
+    {
+      "id": "",
+      "title": "The Legend",
+      "price": "100",
+      "description": "nixuya",
+      "images": "C:\\fakepath\\2023_kia_sportage_ex-v2_032_fsb.png",
+      "creationAt": "2024-07-15T23:45",
+      "category": "Clothes",
+      "newArrival": true
     }
   ]
 }

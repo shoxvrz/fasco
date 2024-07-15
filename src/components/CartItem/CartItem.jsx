@@ -3,7 +3,7 @@ import "./CartItem.scss";
 import { useDispatch } from 'react-redux';
 import { addToCart, decreaseCart, removeFromCart } from '../../toolkit/slice/cartSlice'; 
 
-const CartItem = ({ images, title, price, cartQuantity, id }) => {
+const CartItem = ({ images, title, category, price, cartQuantity, id }) => {
     const dispatch = useDispatch();
 
     const handleAddToCart = () => {

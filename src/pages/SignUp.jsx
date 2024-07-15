@@ -4,7 +4,7 @@ import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
 const SignUp = () => {
-    const { inputData, inputHandler, error, handleSignUp, handleCloseSnackbar, status, openSnackbar, snackbarSeverity, snackbarMessage } = useSignUp();
+    const { inputData, inputHandler, handleSignUp, handleCloseSnackbar, status, openSnackbar, snackbarSeverity, snackbarMessage } = useSignUp();
 
     return (
         <div className="signUp">
@@ -32,7 +32,6 @@ const SignUp = () => {
                     </div>
                     <button onClick={handleSignUp}>Confirm</button>
                     {status === 'loading' && <p>Loading...</p>}
-                    {status === 'failed' && <p>{error}</p>}
                     <Snackbar open={openSnackbar} autoHideDuration={6000} onClose={handleCloseSnackbar}>
                         <Alert onClose={handleCloseSnackbar} severity={snackbarSeverity} sx={{ width: '100%' }}>
                             {snackbarMessage}

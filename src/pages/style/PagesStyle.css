@@ -325,4 +325,134 @@
 .userPage .userCard__buttons button:hover {
   background: transparent;
   color: red;
+}
+
+.signIn {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signIn__center {
+  width: 450px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 72, 72);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.signIn__center--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.signIn__center--logo h1 {
+  font-weight: 500;
+  font-family: "Volkhov";
+  color: rgb(72, 72, 72);
+  font-size: 45px;
+}
+.signIn__center--logo p {
+  font-weight: 500;
+  font-family: "Volkhov";
+  color: rgb(72, 72, 72);
+  font-size: 20px;
+}
+.signIn__center--inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+.signIn__center--inputs button {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid rgb(72, 72, 72);
+  color: #fff;
+  box-shadow: 0px 16.39px 28.68px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(0, 0, 0);
+  font-size: 18px;
+  cursor: pointer;
+}
+.signIn__center--inputs .inputBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.signIn__center--inputs .inputBox input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid rgb(72, 72, 72);
+  font-size: 16px;
+}
+.signIn__center--inputs .inputBox label {
+  color: rgb(72, 72, 72);
+  font-size: 18px;
+  font-weight: 500;
+}
+.signIn .error-message {
+  color: red;
+}
+
+.productsData {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.productsData__title {
+  display: flex;
+}
+.productsData__top {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+.productsData__top button {
+  padding: 10px 5px;
+}
+.productsData__productsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.productsData__productsDiv--productCard {
+  display: flex;
+}
+.productsData__productsDiv--productCard--image {
+  border: 1px solid;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+}
+.productsData__productsDiv--productCard--image img {
+  width: 100%;
+}
+.productsData__productsDiv--productCard--info {
+  width: 65%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.productsData__productsDiv--productCard--buttons {
+  width: 25%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }/*# sourceMappingURL=PagesStyle.css.map */

@@ -54,7 +54,7 @@ const NewArrival = () => {
                 .map((newItem) => (
                   <SwiperSlide className="card" key={newItem.id}>
                     <div className="card__image">
-                      <img className="image" src={newItem.images[0]} alt="" />
+                      <img className="image" src={newItem.images} alt="" />
                     </div>
                     <div className="card__info">
                       <h1>{newItem.title}</h1>
